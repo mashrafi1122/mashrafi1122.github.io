@@ -219,6 +219,7 @@
 
         <h4>Add New User</h4>
         <input type="text" id="new-user-name" placeholder="নাম" />
+         <input type="text" id="new-mobile-number" placeholder="মোবাইল নাম্বার" />
         <input type="email" id="new-user-email" placeholder="ইমেইল" />
         <input type="password" id="new-user-password" placeholder="পাসওয়ার্ড" />
         <select id="new-user-role">
@@ -233,6 +234,7 @@
           <thead>
             <tr>
               <th>নাম</th>
+               <th>মোবাইল নাম্বার</th>
               <th>ইমেইল</th>
               <th>রোল</th>
               <th>একশন</th>
@@ -274,6 +276,7 @@
       showSection("profile");
 
       document.getElementById("profile-name").innerText = user.name;
+      document.getElementById("profile-mobile-number").innerText = user.mobile-number;
       document.getElementById("profile-email").innerText = user.email;
 
       const addMoneySection = document.getElementById("add-money");
